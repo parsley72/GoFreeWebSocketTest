@@ -7,7 +7,7 @@ using System.IO;
 using System.Text;
 using System.Threading;
 using WebSocketSharp;
-using WebSocketSharp.Frame;
+//using WebSocketSharp.Frame;
 
 namespace Navico
 {

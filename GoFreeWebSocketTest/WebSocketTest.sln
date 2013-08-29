@@ -1,12 +1,18 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketTest", "WebSocketTest\WebSocketTest.csproj", "{3FB9520D-E4D5-4503-B862-EBB7F36C2EAF}"
 	ProjectSection(ProjectDependencies) = postProject
+		{5DEA2811-2FFA-4959-830B-CAD3ACACABEB} = {5DEA2811-2FFA-4959-830B-CAD3ACACABEB}
 		{B357BAC7-529E-4D81-A0D2-71041B19C8DE} = {B357BAC7-529E-4D81-A0D2-71041B19C8DE}
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D} = {A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "websocket-sharp", "..\websocket-sharp\websocket-sharp\websocket-sharp.csproj", "{B357BAC7-529E-4D81-A0D2-71041B19C8DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "websocket-sharp", "..\lib\websocket-sharp\websocket-sharp\websocket-sharp.csproj", "{B357BAC7-529E-4D81-A0D2-71041B19C8DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newtonsoft.Json.Net40", "..\lib\Newtonsoft.Json\Src\Newtonsoft.Json\Newtonsoft.Json.Net40.csproj", "{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandLine", "..\lib\commandline\src\libcmdline\CommandLine.csproj", "{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +44,26 @@ Global
 		{B357BAC7-529E-4D81-A0D2-71041B19C8DE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{B357BAC7-529E-4D81-A0D2-71041B19C8DE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{B357BAC7-529E-4D81-A0D2-71041B19C8DE}.Release|x86.ActiveCfg = Release|Any CPU
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}.Release|x86.ActiveCfg = Release|Any CPU
+		{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

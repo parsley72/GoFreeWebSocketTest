@@ -8,7 +8,7 @@ using CommandLine.Text;
 using System.ComponentModel;
 
 using WebSocketSharp;
-using WebSocketSharp.Frame;
+//using WebSocketSharp.Frame;
 using System.Threading;
 using Newtonsoft.Json;
 using System.Diagnostics;
@@ -20,6 +20,7 @@ namespace WebSocketTest
 {
     class Program
     {
+#if VS_2012
         static public void DbgOutput(string message,
             [CallerFilePath] string sourceFilePath = "",
             [CallerLineNumber] int sourceLineNumber = 0)
@@ -27,7 +28,14 @@ namespace WebSocketTest
             Debug.Print(sourceFilePath + "(" + sourceLineNumber + "): " + message);
             Console.WriteLine(message);
         }
-        
+#else // !VS_2012
+        static public void DbgOutput(string message)
+        {
+            Debug.Print(message);
+            Console.WriteLine(message);
+        }
+#endif // VS_2012
+
         private sealed class Options
         {
             [Option('v', null, HelpText = "Print details during execution.")]
@@ -326,7 +334,7 @@ namespace WebSocketTest
             {
                 Environment.Exit(1);
             }
-            
+
             string output;
 /*
             string test1 = "{\"SettingInfo\":[{\"id\":40, \"name\":\"Boat Type\", \"type\":1, \"values\":[{\"id\":0, \"title\":\"Sailing\"}, {\"id\":1,\"title\":\"Fishing\"}, {\"id\":2, \"title\":\"Planing\" }]}]}";
