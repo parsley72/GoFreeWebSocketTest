@@ -407,7 +407,13 @@ namespace WebSocketTest
                 websocketMFD = new NavicoDiscovery.MFD();
                 websocketMFD.IP = options.IP;
                 websocketMFD.Services = new NavicoDiscovery.MFDService[1];
-                websocketMFD.Services[0] = new NavicoDiscovery.MFDService("", 0, Convert.ToUInt32(options.Port));
+
+                uint port = 2053;
+                if (!options.Port.IsNullOrEmpty())
+                {
+                    port = Convert.ToUInt32(options.Port);
+                }
+                websocketMFD.Services[0] = new NavicoDiscovery.MFDService("navico-nav-ws", 0, port);
             }
 
             DbgOutput(string.Format("Connect to {0}:{1}", websocketMFD.IP, websocketMFD.Services[0].Port));
