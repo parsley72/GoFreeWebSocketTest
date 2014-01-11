@@ -8,7 +8,7 @@ using CommandLine.Text;
 using System.ComponentModel;
 
 using WebSocketSharp;
-using WebSocketSharp.Frame;
+//using WebSocketSharp.Frame;
 using System.Threading;
 using Newtonsoft.Json;
 using System.Diagnostics;

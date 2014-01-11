@@ -7,7 +7,7 @@ using System.IO;
 using System.Text;
 using System.Threading;
 using WebSocketSharp;
-using WebSocketSharp.Frame;
+//using WebSocketSharp.Frame;
 
 namespace Navico
 {
@@ -935,21 +935,21 @@ namespace Navico
         {
             _ws.Connect();
 
-            ThreadPool.QueueUserWorkItem(_notifyMsg);
-            _heartbeatTimer = new Timer(_sendHeartbeat, null, 30 * 1000, 30 * 1000);
+                ThreadPool.QueueUserWorkItem(_notifyMsg);
+                _heartbeatTimer = new Timer(_sendHeartbeat, null, 30 * 1000, 30 * 1000);
         }
 
         public void Disconnect()
         {
-            var wait = new AutoResetEvent(false);
-            _heartbeatTimer.Dispose(wait);
-            wait.WaitOne();
+                var wait = new AutoResetEvent(false);
+                _heartbeatTimer.Dispose(wait);
+                wait.WaitOne();
 
             _ws.Close();
 
-            _notifyMsgState.Enabled = false;
-            _notifyMsgState.Notification.WaitOne();
-        }
+                _notifyMsgState.Enabled = false;
+                _notifyMsgState.Notification.WaitOne();
+            }
 
         public void Dispose()
         {
