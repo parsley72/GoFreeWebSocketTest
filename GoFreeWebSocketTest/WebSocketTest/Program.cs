@@ -619,7 +619,7 @@ namespace WebSocketTest
                     eventSet.id = (int)eEvents.WaypointCreate;
                     eventSet.latitude = 50.9892;
                     eventSet.longitude = -1.4975;
-                    eventSet.name = "Waypoint1";
+                    eventSet.wpName = "Waypoint1";
                     rootEventSet.EventSet.Add(eventSet);
                     data = JsonConvert.SerializeObject(rootEventSet);
                     streamer.Write(data);
