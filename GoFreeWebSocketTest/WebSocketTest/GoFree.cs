@@ -802,11 +802,11 @@ namespace Navico
             {
                 switch (e.Type)
                 {
-                    case Opcode.TEXT:
+                    case Opcode.Text:
                         /*var msg =*/ parseTextMessage(e.Data);
 //                        _msgQ.Enqueue(msg);
                         break;
-                    case Opcode.BINARY:
+                    case Opcode.Binary:
                         break;
                     default:
                         break;
@@ -925,7 +925,7 @@ namespace Navico
 
                 default:
                 {
-                    System.Diagnostics.Debug.WriteLine("Eh? {0}", key);
+                    System.Diagnostics.Debug.WriteLine("Eh? {0} {1}", key, data);
                 }
                 break;
             }

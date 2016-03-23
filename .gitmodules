@@ -1,9 +1,0 @@
-[submodule "lib/websocket-sharp"]
-	path = lib/websocket-sharp
-	url = git://github.com/sta/websocket-sharp.git
-[submodule "lib/Newtonsoft.Json"]
-	path = lib/Newtonsoft.Json
-	url = git://github.com/JamesNK/Newtonsoft.Json.git
-[submodule "lib/commandline"]
-	path = lib/commandline
-	url = git://github.com/gsscoder/commandline.git
